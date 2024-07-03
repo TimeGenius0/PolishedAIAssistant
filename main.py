@@ -19,7 +19,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
         if not messages:
             return func.HttpResponse(
-                "Please pass a list of messages in the request body",
+                "Please pass ages in the request",
                 status_code=400
             )
 
