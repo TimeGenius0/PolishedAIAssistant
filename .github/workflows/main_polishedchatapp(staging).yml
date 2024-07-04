@@ -51,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'Production'
+      name: 'staging'
       url: ${{ steps.deploy-to-function.outputs.webapp-url }}
     permissions:
       id-token: write #This is required for requesting the JWT
@@ -68,9 +68,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_2FFB1B09328241508997E59E19CCF337 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_1E46639F7EF146119747ADCA1B1280A7 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D5FF5E9D1D884634B247165C3688C0FD }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_457A91956D6E4E288349723F7B1B8ED8 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_6830706F7CB74349A747A94CC4B46DDD }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_25BF75C01C8E4AADA28EB72FA90FD9F2 }}
 
       - name: 'Deploy to Azure Functions'
         uses: Azure/functions-action@v1
