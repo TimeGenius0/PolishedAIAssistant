@@ -4,7 +4,7 @@ import requests
 import openai
 
 # OpenAI API key
-OPENAI_API_KEY = 'your-openai-api-key'
+OPENAI_API_KEY = 'sk-proj-aqiGQeEarR6llFg5tyTKT3BlbkFJ4INzMAcGSfwt4v9M3cUe'
 
 # Bubble.io endpoint URL
 BUBBLE_IO_ENDPOINT = 'https://bubble.io/app/your-endpoint'
