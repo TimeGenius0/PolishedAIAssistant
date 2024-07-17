@@ -1,0 +1,42 @@
+I) DATA
+
+https://aichatassistantpolished.azurewebsites.net/api/data
+
+BODY
+{"request":"<request>", "user_id":"<id>", "scenario_id":"<scenario_id>"}
+
+RESPONSE
+{
+  "input_text": "new",
+  "input_url": "new",
+  "output_text": "new",
+  "output_url": "new",
+  "model": "new",
+  "id": "a9661d73-4407-4d8c-bdc8-5b454536a838b31d1b83-519b-48cd-ad45-019d900b5d5d",
+  "backend_dataset_id": "gjkuhuiuiiiuuiiuiuui12323",
+  "dataset_name": "I want ice cream",
+  "dataset_origin": "I want ice cream",
+  "dataset_description": "dataset_description",
+  "ground_truth": "ground truth",
+  "scenario_id": "7789839",
+  "user_email": "33333333",
+  "model_id": "",
+  "dataset_id": "c98dd478-f616-47ab-a6e0-7c2364da9151"
+}
+
+
+
+
+II) AICHAT 
+https://aichatassistantpolished.azurewebsites.net/api/AiChat
+BODY 
+{"message":"<message>", "user_id":"<id>"}
+RESPONSE : STRING 
+
+
+III) CSV
+CSV -- initially implemented as a blob triggered function, but would like to change that to an http triggered function
+BODY 
+{user_id, model_id}
+RESPONSE
+200 or 500
